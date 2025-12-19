@@ -1,0 +1,30 @@
+[project]
+name = "research-python-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Morixx", email = "98456451+morixxfoxdata@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+research-python-template = "research_python_template:main"
+
+[tool.ruff]
+line-length = 88
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "ruff>=0.14.10",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
